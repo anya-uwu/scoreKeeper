@@ -10,12 +10,18 @@ let p2Score = 0;
 let winningScore = 5;
 let isGameOver = false;
 
+function updateScores() {
+    
+}
+
 function reset() {
     isGameOver = false;
     p1Score = 0;
     p2Score = 0;
     p1Display.textContent = 0;
     p2Display.textContent = 0;
+    p1Display.classList.remove('has-text-success', 'has-text-danger');
+    p2Display.classList.remove('has-text-success', 'has-text-danger');
 }
 
 winningScoreSelect.addEventListener('change', function () {
